@@ -64,7 +64,7 @@ public class VirtualMachine {
    * @param bytecode to execute
    */
   public void execute(int[] bytecode) {
-    for (var i = 0; i < bytecode.length; i++) {
+    for (var i = 0; i < bytecode.length; ++i) {
       Instruction instruction = Instruction.getInstruction(bytecode[i]);
       switch (instruction) {
         case LITERAL:
